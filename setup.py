@@ -31,8 +31,7 @@ setup(
     url='https://github.com/octodns/octodns-cloudns',
     version=version(),
     tests_require=[
-        'mock>=4.0.3',
-        'nose',
-        'nose-no-network'
+        'pytest',
+        'pytest-network'
     ],
 )
