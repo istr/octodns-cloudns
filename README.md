@@ -41,20 +41,20 @@ identified by id, or `sub_auth_user` for sub account, identified by name.
 providers:
   cloudns:
     class: octodns_cloudns.ClouDNSProvider
-    auth_id:
-    auth_password:
-    sub_auth_id: {for sub accounts}
-    sub_auth_user: {alternative for sub accounts}
+    # use exactly one of auth_id, sub_auth_id, or sub_auth_user
+    auth_id: env/CLOUDNS_API_AUTH_ID
+    # sub_auth_id: env/CLOUDNS_API_SUB_AUTH_ID
+    # sub_auth_user: env/CLOUDNS_API_SUB_AUTH_USER
 ```
 
 ### Support Information
 
 #### Records
 
-ClouDNSProvider supports A, AAAA, ALIAS, CAA, CNAME, MX, NAPTR, NS, PTR,
-SSHFP, SPF, SRV, and TXT.
+ClouDNSProvider supports A, AAAA, ALIAS, CAA, CNAME, MX, NAPTR, NS,
+PTR, SPF, SRV, SSHFP, URLFWD (WR), and TXT.
 
-ClouDNSProvider DOES NOT support DNAME, LOC, URLFWD.
+ClouDNSProvider DOES NOT support DNAME and LOC.
 
 ClouDNSProvider could support DNSSEC (DS) and TLSA as well as CERT records.
 
