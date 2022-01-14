@@ -2,8 +2,7 @@ PyYAML==6.0
 attrs==21.4.0
 certifi==2021.10.8
 charset-normalizer==2.0.10
-git+https://github.com/istr/cloudns_api.git@c0dbc826f5724bfa9d7455d6a5b5a7a8d3307c14#egg=cloudns_api
-coverage==6.2
+git+https://github.com/istr/cloudns_api.git@5c6fa35f9c4048aba741df2aa84ae91c458573ad#egg=cloudns_api
 dnspython==2.1.0
 fqdn==1.5.1
 idna==3.3
