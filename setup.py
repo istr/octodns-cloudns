@@ -29,13 +29,12 @@ setup(
     python_requires='>=3.6',
     install_requires=(
         'octodns>=0.9.14',
-        ('git+https://github.com/istr/cloudns_api.git@'
-         '5c6fa35f9c4048aba741df2aa84ae91c458573ad#egg=cloudns_api')
+        'cloudns_api>=0.9.6',
     ),
     url='https://github.com/octodns/octodns-cloudns',
     version=version(),
     tests_require=(
         'pytest',
-        'pytest-network'
+        'pytest-network',
     ),
 )
